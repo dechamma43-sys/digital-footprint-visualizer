@@ -1,7 +1,13 @@
+let chart;
+
 function showData() {
     const ctx = document.getElementById('myChart');
 
-    new Chart(ctx, {
+    if (chart) {
+        chart.destroy();
+    }
+
+    chart = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: ['Social Media', 'Emails', 'Comments'],
