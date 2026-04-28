@@ -3,18 +3,24 @@
 <head>
     <title>Digital Footprint Visualizer</title>
 
-    <!-- ✅ ADD THIS LINE -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Digital Footprint Visualizer</h1>
+<div class="container">
+    <h1>🔐 Digital Footprint Visualizer</h1>
 
-<input type="text" placeholder="Enter username">
-<button onclick="showData()">Analyze</button>
+    <div class="card">
+        <input type="text" id="username" placeholder="Enter username">
+        <button onclick="showData()">Analyze</button>
 
-<canvas id="myChart"></canvas>
+        <p id="risk"></p>
+
+        <canvas id="myChart"></canvas>
+    </div>
+</div>
 
 <script src="script.js"></script>
 
