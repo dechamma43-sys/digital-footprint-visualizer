@@ -1,0 +1,19 @@
+function showData() {
+    const data = {
+        labels: ['Social Media', 'Emails', 'Comments'],
+        datasets: [{
+            label: 'Digital Footprint',
+            data: [70, 50, 30],
+        }]
+    };
+
+    const config = {
+        type: 'bar',
+        data: data,
+    };
+
+    new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+}
