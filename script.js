@@ -7,8 +7,7 @@ function showData() {
             labels: ['Social Media', 'Emails', 'Comments'],
             datasets: [{
                 label: 'Digital Footprint',
-                data: [70, 50, 30],
-                borderWidth: 1
+                data: [70, 50, 30]
             }]
         }
     });
